@@ -22,4 +22,4 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/vendor/jquery.dataTables.min.js',
         'resources/vendor/dataTables.bootstrap4.min.js',
         'resources/demo/datatables-demo.js',
-    ],'public/js/admin_all.js'); 
+    ], 'public/js/admin_all.js'); 

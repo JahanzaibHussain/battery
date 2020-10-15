@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('backend.dashboard');
 });
+
+Route::get('/users', function () {
+    return view('backend.pages.users.index');
+});
+
+Route::get('/roles', function () {
+    return view('backend.pages.users.index');
+});
+
+Route::get('/permission', function () {
+    return view('backend.pages.users.index');
+});
+
+
