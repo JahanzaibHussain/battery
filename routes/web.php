@@ -1,10 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentsController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routess
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -13,20 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('backend.dashboard');
+Route::get('/', function(){
+    return view("welcome");
 });
 
-Route::get('/users', function () {
-    return view('backend.pages.users.index');
+Route::get('/dashboard', function(){
+    return view("backend.dashboard");
 });
+Route::get('/student', [StudentsController::class, "add"] );
+Route::post('/student', [StudentsController::class, "insert"] );
 
-Route::get('/roles', function () {
-    return view('backend.pages.users.index');
-});
+Auth::routes();
 
-Route::get('/permission', function () {
-    return view('backend.pages.users.index');
-});
-
-
+Route::get('/home', [HomeController::class, 'index'])->name('home');
