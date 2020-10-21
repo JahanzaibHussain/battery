@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentsController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +21,12 @@ Route::get('/', function(){
     return view("welcome");
 });
 
-Route::get('/dashboard', function(){
-    return view("backend.dashboard");
-});
-Route::get('/student', [StudentsController::class, "add"] );
-Route::post('/student', [StudentsController::class, "insert"] );
+Route::get('/dashboard', [DashboardController::class, 'index'] );
 
+// Login Register routes
 Auth::routes();
+
+// Route::get("/users", [UsersController::class, "index"]);
+Route::resource("users", UsersController::class);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');

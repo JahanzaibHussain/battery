@@ -22,21 +22,41 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Authorized
+        Users Access Management
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/users" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fas fa-fw fa-users"></i>
+          <span>Users</span>
+        </a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Access Management:</h6>
+            <a class="collapse-item" href="#">Users</a>
+            <a class="collapse-item" href="#">Permission</a>
+            <a class="collapse-item" href="#">Roles</a>
+          </div>
+        </div>
+      </li>
+      
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Products
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="/users" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Users</span>
+          <span>Categories</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">User Management:</h6>
-            <a class="collapse-item" href="buttons.html">Users</a>
-            <a class="collapse-item" href="cards.html">Roles</a>
-            <a class="collapse-item" href="cards.html">Permission</a>
+            <h6 class="collapse-header">Category Management:</h6>
+            <a class="collapse-item" href="#">Main Categories</a>
+            <a class="collapse-item" href="#">Sub Categories</a>
           </div>
         </div>
       </li>
@@ -45,15 +65,12 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
+          <span>Products</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
+            <h6 class="collapse-header">Product Management:</h6>
+            <a class="collapse-item" href="utilities-color.html">All Products</a>
           </div>
         </div>
       </li>
