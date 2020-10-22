@@ -12,7 +12,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="/dashboard">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -34,7 +34,7 @@
         <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Access Management:</h6>
-            <a class="collapse-item" href="#">Users</a>
+            <a class="collapse-item" href="/users">Users</a>
             <a class="collapse-item" href="#">Permission</a>
             <a class="collapse-item" href="#">Roles</a>
           </div>

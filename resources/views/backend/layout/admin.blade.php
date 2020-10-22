@@ -13,7 +13,7 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
     <!-- Custom styles for this page -->
-    {{-- <link href="{{asset('admin/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> --}}
+    <link href="{{asset('admin/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> --}}
     {{-- <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.bootstrap4.min.css"> --}}
@@ -75,11 +75,11 @@
   <script src="{{asset('admin/js/demo/chart-pie-demo.js')}}"></script> 
   
   <!-- Page level plugins -->
-  {{-- <script src="{{asset('admin/vendor/datatables/jquery.dataTables.min.js')}}"></script>
-  <script src="{{asset('admin/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script> --}}
+  <script src="{{asset('admin/vendor/datatables/jquery.dataTables.min.js')}}"></script>
+  <script src="{{asset('admin/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
 
   <!-- Page level custom scripts -->
-  {{-- <script src="{{asset('admin/js/demo/datatables-demo.js')}}"></script> --}}
+  <script src="{{asset('admin/js/demo/datatables-demo.js')}}"></script>
 
 </body>
 </html>
