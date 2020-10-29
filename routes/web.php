@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentsController;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\UsersController;
+use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +21,7 @@ Route::get('/', function(){
     return view("welcome");
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index'] );
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 // Login Register routes
 Auth::routes();
